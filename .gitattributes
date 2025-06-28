@@ -1,0 +1,55 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.py text
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.json text
+*.css text
+*.html text
+*.md text
+*.yml text
+*.yaml text
+
+# Documentation
+*.md text diff=markdown
+*.txt text
+README text
+LICENSE text
+
+# Config files
+.gitignore text
+.gitattributes text
+.editorconfig text
+
+# Docker
+Dockerfile text
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# Python files
+*.pyc binary
+*.pyo binary
+*.pyd binary
+
+# Node files
+node_modules/ binary
+
+# Exclude files from language statistics
+frontend/dist/* linguist-generated
+*.min.js linguist-vendored
+*.min.css linguist-vendored 
